@@ -55,7 +55,40 @@ Perception performance degrades in cluttered environments with occlusion and hig
 Perception performs significantly better in structured and less complex environments.
 
 ---
+## Scenario Comparison (Visual Analysis)
 
+### Dense Urban Scenario
+
+![Urban Original](images/urban_original.webp)
+![Urban Detection](images/urban_detection.webp)
+
+**Observation:**
+
+* High object density leads to overlapping detections
+* Multiple detections with lower confidence
+* Increased ambiguity in perception output
+
+---
+
+### Low-Density Scenario
+
+![Simple Original](images/simple_original.png)
+![Simple Detection](images/simple_detection.png)
+
+**Observation:**
+
+* Clear object separation
+* Higher confidence detections
+* More stable perception output
+
+---
+
+## Key Engineering Insight
+
+* AI perception performance is highly sensitive to environmental complexity
+* Dense urban environments introduce occlusion, clutter, and ambiguity
+* Detection output alone is insufficient → requires tracking, filtering, and context awareness
+--
 ## System Constraints
 
 * **Latency:** Real-time processing required (~50–100 ms per frame)
