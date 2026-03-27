@@ -143,6 +143,34 @@ Example:
   * fallback and degraded modes
 
 ---
+## How to Run (Quick Demo)
+
+1. Clone repository:
+
+   ```bash
+   git clone https://github.com/rakarthi1990-hub/adas-perception-pipeline.git
+   cd adas-perception-pipeline
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install torch torchvision
+   pip install ultralytics
+   ```
+
+3. Run object detection:
+
+   ```bash
+   python yolov5/detect.py --source path_to_image --weights yolov5s.pt
+   ```
+
+---
+
+## Note
+
+This project focuses on **system-level analysis of perception behavior**, not model training or optimization.
+--
 
 ## Project Purpose
 
